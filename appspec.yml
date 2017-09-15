@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+# hooks:
+#  ApplicationStop:
+#    - location:
+#      timeout: 300
+#      runas: ubuntu
+  # BeforeInstall:
+  #   - location: scripts/cleanDeployDirs.sh
+  #     timeout: 300
+  #     runas: root
+#  AfterInstall:
+#    - location: scripts/deploy.sh
+#      timeout: 300
+#      runas: root
+  # ApplicationStart:
+  #   - location: scripts/deployCode.sh
+  #     timeout: 600
+  #     runas: ubuntu
+#  ValidateService:
+#    - location: scripts/validateWowzaServices.sh
+#      timeout: 300
+#      runas: root
